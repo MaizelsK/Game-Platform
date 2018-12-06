@@ -2,9 +2,6 @@
 using DataAccessLibrary.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLibrary.Entities
 {
@@ -13,6 +10,11 @@ namespace DataAccessLibrary.Entities
         public User()
         {
             Id = new Guid();
+
+            Friends = new List<User>();
+            Groups = new List<Group>();
+            Purchases = new List<Product>();
+            Messages = new List<Message>();
         }
 
         public Guid Id { get; set; }
