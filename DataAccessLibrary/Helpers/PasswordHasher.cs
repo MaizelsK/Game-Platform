@@ -34,7 +34,7 @@ namespace DataAccessLibrary.Helpers
             return Convert.ToBase64String(hashBytes);
         }
 
-        // Проверка введенного пользователем пароля
+        // Проверка, введенного пользователем, пароля
         public bool VerifyPassword(string enteredPassword, string passwordHash)
         {
             byte[] hashBytes = Convert.FromBase64String(passwordHash);
