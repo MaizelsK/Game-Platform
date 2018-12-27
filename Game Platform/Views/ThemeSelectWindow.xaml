@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Choose theme" Height="300" Width="500">
     <Grid>
-        
+
     </Grid>
 </Window>
+    
