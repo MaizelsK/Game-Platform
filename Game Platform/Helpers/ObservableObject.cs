@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace Game_Platform.Helpers
 {
@@ -12,6 +13,14 @@ namespace Game_Platform.Helpers
             {
                 PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
             }
+        }
+
+        protected virtual void SetProperty<T>(ref T member, T val, [CallerMemberName] string propertyName = null)
+        {
+            if (object.Equals(member, val)) return;
+
+            member = val;
+            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

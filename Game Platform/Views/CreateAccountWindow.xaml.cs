@@ -23,5 +23,14 @@ namespace Game_Platform.Views
         {
             InitializeComponent();
         }
+
+        // Просто так привязаться к паролю нельзя
+        // Использую событие на смену пароля
+        // И далее присваиваю значение свойству Password
+        public void PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (this.DataContext != null)
+            { ((dynamic)this.DataContext).Password = ((PasswordBox)sender).Password; }
+        }
     }
 }

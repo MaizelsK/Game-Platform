@@ -67,7 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Helpers\ValidatableObservableObject.cs" />
     <Compile Include="Interfaces\ISignInManager.cs" />
+    <Compile Include="Models\CreateAccountModel.cs" />
     <Compile Include="Services\ApplicationService.cs" />
     <Compile Include="Services\SignInService.cs" />
     <Compile Include="ViewModels\CreateAccountViewModel.cs" />

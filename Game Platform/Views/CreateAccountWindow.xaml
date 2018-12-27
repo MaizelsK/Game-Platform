@@ -32,8 +32,7 @@
                 <Label Content="Password" HorizontalContentAlignment="Right"
                        Width="90" FontSize="16"/>
                 <PasswordBox x:Name="PasswordBox" Width="310" FontSize="16" 
-                             Margin="10 0 0 0"
-                             PasswordChanged="PasswordChanged"/>
+                             Margin="10 0 0 0" PasswordChanged="PasswordChanged"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,15,90,0" HorizontalAlignment="Center">
